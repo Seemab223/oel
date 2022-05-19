@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>
+		Creating Search Bar using HTML
+		CSS and Javascript
+	</title>
+	<style>
+		*{
+		margin:0px;
+		}
+		body{
+			background-color:#aea0a0;
+		}
+		#searchbar{
+		 margin-left: 15%;
+		 padding:15px;
+		 border-radius: 10px;
+	   }
+	 
+	   input[type=text] {
+		  width: 30%;
+		  -webkit-transition: width 0.15s ease-in-out;
+		  transition: width 0.15s ease-in-out;
+	   }
+	 
+	   /* When the input field gets focus,
+			change its width to 100% */
+	   input[type=text]:focus {
+		 width: 70%;
+	   }
+	 
+	  #list{
+		font-size:  1.5em;
+		margin-left: 90px;
+	   }
+	 
+		.thing{
+		   display: list-item;    
+		  } 
+		  
+	  div{
+		background-color:#aea0a0;padding:30px;
+		}
+	  ol{
+		color:white;
+		}	
+		a{text-decoration:none;color:white}
+	</style>
+
+</head>
+
+<body>
+	<div>
+		<input id="searchbar" onkeyup="search()" type="text"
+		name="search" placeholder="Search ..">
+
+	<ol id='list' style="display:;">
+		<li class="thing"><a href="a3.html">Dinner</a></li>
+		<li class="thing"><a href="a4.html">Wedding</a></li>
+		<li class="thing"><a href="a5.html">Lunch</a></li>
+		<li class="thing"><a href="a6.html">Party</a></li>
+		<li class="thing"><a href="a7.html">Eid Party</a></li>
+		<li class="thing"><a href="a8.html">Faweral</a></li>
+	</ol>
+	
+	<script src="search.js"></script>
+	</div>
+	
+</body>
+
+</html>

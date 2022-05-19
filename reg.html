@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			body{background-color:#b0860b;}
+			h1{text-align:center;color:white;}
+			form{background-color:orange;width:500px;padding:30px;margin-left:10%;margin-top:%;border-radius:5px;}
+			label{padding:10px;}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>Registration Form</h1>
+			<form>
+				<label>Email</label>
+				<input type="email" placeholder="email" name="email" required></input><br>
+				<label>Password</label>
+				<input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+				</input><br>
+				<label>Re-type</label>
+				<input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+				</input>
+				<br>
+				<input type="submit" value="Register" id="btn" ></input>
+			</form>
+		</div>
+		
+		<script>
+			document.getElementById("btn").addEventListener("click", myFunction);
+
+			function myFunction() {
+				var a=document.getElementById("pass1");
+				var b=document.getElementById("pass2");
+				if(a!=b)
+				{
+				
+				}
+			}
+		</script>
+	</body>
+</html>
